@@ -32,15 +32,15 @@ This project is a classic Snake game where you control a snake that moves around
 Navigate to the project directory:
 
 	cd snake-game
-Build the Docker image:
+2. Build the Docker image:
 	
  	docker build -t snake-game .
 	
-Run the Docker container:
+3. Run the Docker container:
 
 	docker run -p 5000:5000 snake-game
-Open a web browser and access the Snake Game at:
+4. Open a web browser and access the Snake Game at:
 	
-  	http://localhost:5000.
+  	http://localhost:5000
 
 Use arrow keys to control the snake. Click the "Start" button to begin the game and "Reset" to start a new game.
