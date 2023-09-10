@@ -28,23 +28,19 @@ This project is a classic Snake game where you control a snake that moves around
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/snake-game.git
+   git clone https://github.com/ashubambal/snake-game.git
 Navigate to the project directory:
 
-	bash
-	Copy code
 	cd snake-game
-	Build the Docker image:
+Build the Docker image:
+	
+ 	docker build -t snake-game .
+	
+Run the Docker container:
 
-	bash
-	Copy code
-	docker build -t snake-game .
-	Usage
-	Run the Docker container:
-
-	bash
-	Copy code
 	docker run -p 5000:5000 snake-game
-	Open a web browser and access the Snake Game at http://localhost:5000.
+Open a web browser and access the Snake Game at:
+	
+  	http://localhost:5000.
 
 Use arrow keys to control the snake. Click the "Start" button to begin the game and "Reset" to start a new game.
