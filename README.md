@@ -9,7 +9,7 @@ Welcome to the Snake Game, a simple web-based Snake game implemented in Python u
 - [Installation](#installation)
 - [Usage](#usage)
 - [Docker Support](#docker-support)
-- [License](#license)
+- [Output](#Output)
 
 ## Description
 
@@ -44,3 +44,7 @@ This project is a classic Snake game where you control a snake that moves around
   		http://localhost:5000
 
 Use arrow keys to control the snake. Click the "Start" button to begin the game and "Reset" to start a new game.
+
+## Output
+![snake-game](https://github.com/ashubambal/snake-game/assets/92073828/a93f0b10-280e-4733-a3dd-97128b843445)
+
