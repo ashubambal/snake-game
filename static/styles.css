@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  /* Set the background color for the game area (canvas) */
+  #game-canvas {
+    background-color: black; /* Change this to your desired background color */
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Style for the "Game Over" message */
+  .game-over {
+    font-size: 30px;
+    color: #ff0000;
+    margin-top: 20px;
+  }
+  
+  /* Center the controls horizontally */
+  .controls {
+    text-align: center;
+  }
+  
+  /* Style for the control buttons */
+  .controls a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .controls a:hover {
+    background-color: #555;
+  }
+  
