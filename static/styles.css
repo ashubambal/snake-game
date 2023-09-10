@@ -47,22 +47,6 @@ body {
     background-color: #555;
   }
 
-  .container {
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with the actual path to your image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 400px; /* Adjust the width and height to match your canvas size */
-    height: 400px;
-    position: relative;
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
 
 
   

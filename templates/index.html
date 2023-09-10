@@ -8,13 +8,10 @@
     <div class="header">
         <h1 class="game-title">Snake-Game</h1>
         <div class="controls">
-            <p>Use arrow keys to control the snake:</p>
+            <p><u><b>Use arrow keys to control the snake:</b></u></p>
         </div>
     </div>
     <canvas id="game-canvas" width="{{ GRID_SIZE * 20 }}" height="{{ GRID_SIZE * 20 }}"></canvas>
-    <div class="container">
-        <canvas id="game-canvas" width="400" height="400"></canvas>
-    </div>
     <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>
