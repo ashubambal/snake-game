@@ -123,8 +123,8 @@ This project includes Kubernetes deployment and service configuration files (`de
 
 1. Use the following commands to apply the Kubernetes deployment and service configurations:
 
-	kubectl apply -f deployment.yml
-	kubectl apply -f service.yml
+		kubectl apply -f deployment.yml
+		kubectl apply -f service.yml
 
    This will create a deployment and a service for the Snake Game application on your Kubernetes cluster.
 
@@ -133,7 +133,7 @@ This project includes Kubernetes deployment and service configuration files (`de
 
    To access the Snake Game, you need to find the external IP or URL of the service. Use the following command to get the external IP:
 
-	kubectl get svc snake-game-service
+		kubectl get svc snake-game-service
 
    Look for the "EXTERNAL-IP" column to find the IP address or URL. You can access the Snake Game in your web browser at that IP or URL.
 
@@ -141,8 +141,8 @@ This project includes Kubernetes deployment and service configuration files (`de
 
    To remove the Snake Game deployment and service from your Kubernetes cluster when you're done, you can use:
 
-	kubectl delete -f deployment.yml
-	kubectl delete -f service.yml
+		kubectl delete -f deployment.yml
+		kubectl delete -f service.yml
 
    That's it! You can now deploy and run the Snake Game on your Kubernetes cluster using the provided deployment and service configuration files.
 
