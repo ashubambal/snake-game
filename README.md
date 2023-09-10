@@ -102,7 +102,48 @@ This project uses Docker and Docker Compose for containerization and easy deploy
    git clone https://github.com/your-username/snake-game.git
    cd snake-game
 
+## Kubernetes Deployment
 
+This project includes Kubernetes deployment and service configuration files (`deployment.yml` and `service.yml`) to help you deploy the Snake Game on a Kubernetes cluster. Follow these steps to set up the game on Kubernetes:
+
+1. **Kubernetes Cluster Setup:**
+
+   If you don't have a Kubernetes cluster set up, you can create one using a tool like [Minikube](https://minikube.sigs.k8s.io/docs/start/) for local development or deploy on a cloud provider like [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) or [Amazon EKS](https://aws.amazon.com/eks/).
+
+2. **Clone the Repository:**
+
+   Clone the Snake Game repository to your local machine if you haven't already:
+
+   ```bash
+   git clone https://github.com/your-username/snake-game.git
+   cd snake-game
+
+Apply Kubernetes Configuration:
+
+Use the following commands to apply the Kubernetes deployment and service configurations:
+
+	kubectl apply -f deployment.yml
+	kubectl apply -f service.yml
+
+This will create a deployment and a service for the Snake Game application on your Kubernetes cluster.
+
+
+Access the Snake Game:
+
+To access the Snake Game, you need to find the external IP or URL of the service. Use the following command to get the external IP:
+
+	kubectl get svc snake-game-service
+
+Look for the "EXTERNAL-IP" column to find the IP address or URL. You can access the Snake Game in your web browser at that IP or URL.
+
+Clean Up:
+
+To remove the Snake Game deployment and service from your Kubernetes cluster when you're done, you can use:
+
+	kubectl delete -f deployment.yml
+	kubectl delete -f service.yml
+
+That's it! You can now deploy and run the Snake Game on your Kubernetes cluster using the provided deployment and service configuration files.
 
 ## Output
 ![snake-game](https://github.com/ashubambal/snake-game/assets/92073828/eba2af95-6e0d-4969-bd90-e5110b270627)
