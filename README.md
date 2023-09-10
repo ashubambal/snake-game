@@ -105,5 +105,6 @@ This project uses Docker and Docker Compose for containerization and easy deploy
 
 
 ## Output
-![snake-game](https://github.com/ashubambal/snake-game/assets/92073828/a93f0b10-280e-4733-a3dd-97128b843445)
+![snake-game](https://github.com/ashubambal/snake-game/assets/92073828/eba2af95-6e0d-4969-bd90-e5110b270627)
+
 
