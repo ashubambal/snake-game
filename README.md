@@ -43,7 +43,45 @@ This project is a classic Snake game where you control a snake that moves around
 	
   		http://localhost:5000
 
-Use arrow keys to control the snake. Click the "Start" button to begin the game and "Reset" to start a new game.
+## Jenkinsfile for Continuous Integration (CI)
+
+This project includes a Jenkinsfile that allows you to set up Continuous Integration (CI) for automated building and testing of your Snake Game using Jenkins. Follow these steps to configure CI with Jenkins:
+
+1. **Install and Configure Jenkins:** If you haven't already, install Jenkins on your server or machine, and set up the necessary plugins, including the GitHub plugin.
+
+2. **Create a Jenkins Pipeline Job:**
+
+    - Open Jenkins.
+    - Click "New Item" to create a new job.
+    - Enter a name for your job (e.g., "Snake Game CI") and select "Pipeline" as the job type.
+    - Click "OK" to create the job.
+
+3. **Configure the Jenkins Pipeline:**
+
+    - In the pipeline configuration:
+        - Under the "Pipeline" section, choose "Pipeline script from SCM."
+        - Select "Git" as the SCM.
+        - Enter the URL of your GitHub repository (e.g., `https://github.com/your-username/snake-game.git`).
+        - Specify the branch you want to build (e.g., "main").
+        - In the "Script Path" field, enter the path to your Jenkinsfile (e.g., "Jenkinsfile").
+    - Save the pipeline configuration.
+
+4. **GitHub Webhook Integration:**
+
+    - In your GitHub repository, go to "Settings" > "Webhooks."
+    - Add a webhook with the payload URL pointing to your Jenkins server's GitHub webhook endpoint (e.g., `http://your-jenkins-server/github-webhook/`).
+    - Set the content type to `application/json`.
+    - Choose the events that should trigger the webhook (e.g., "Just the push event").
+    - Save the webhook configuration.
+
+5. **Testing the CI/CD Pipeline:**
+
+    - Make changes to your Snake Game code and push them to your GitHub repository.
+    - Go to your Jenkins dashboard, and you should see your CI job automatically triggered by the GitHub webhook.
+    - Jenkins will build and test your Snake Game based on the instructions in the Jenkinsfile.
+
+That's it! You've successfully set up CI for your Snake Game project using Jenkins and a Jenkinsfile.
+
 
 ## Output
 ![snake-game](https://github.com/ashubambal/snake-game/assets/92073828/a93f0b10-280e-4733-a3dd-97128b843445)
