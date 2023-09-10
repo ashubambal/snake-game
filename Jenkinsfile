@@ -23,7 +23,7 @@ pipeline {
                     sh "docker push ${env.dockerHubUser}/snake-game:latest"
                 }
             }
-        } // Missing closing curly brace was added here
+        } 
         stage("Pulling images") {
             steps {
                 echo "pulling docker image"
