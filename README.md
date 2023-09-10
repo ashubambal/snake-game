@@ -8,12 +8,13 @@ Welcome to the Snake Game, a simple web-based Snake game implemented in Python u
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Docker Support](#docker-support)
-- [Output](#Output)
+- [Docker and Docker Compose Setup](#Docker-and-Docker-Compose-Setup)
+- [Usage](#usage)
+- [Kubernetes Deployment](#Kubernetes-Deployment)
 
 ## Description
 
-This project is a classic Snake game where you control a snake that moves around the screen and tries to eat food items to grow longer. The game is implemented as a web application using Flask, a micro web framework for Python. It's designed to run in a Docker container, making it easy to deploy and play on any system that supports Docker.
+This project is a classic Snake game where you control a snake that moves around the screen and tries to eat food items to grow longer. The game is implemented as a web application using Flask, a microweb framework for Python. It's designed to run in a Docker container, making it easy to deploy and play on any system that supports Docker.
 
 ## Features
 
@@ -118,32 +119,32 @@ This project includes Kubernetes deployment and service configuration files (`de
    git clone https://github.com/your-username/snake-game.git
    cd snake-game
 
-Apply Kubernetes Configuration:
+## Apply Kubernetes Configuration
 
-Use the following commands to apply the Kubernetes deployment and service configurations:
+1. Use the following commands to apply the Kubernetes deployment and service configurations:
 
 	kubectl apply -f deployment.yml
 	kubectl apply -f service.yml
 
-This will create a deployment and a service for the Snake Game application on your Kubernetes cluster.
+   This will create a deployment and a service for the Snake Game application on your Kubernetes cluster.
 
 
-Access the Snake Game:
+2. Access the Snake Game:
 
-To access the Snake Game, you need to find the external IP or URL of the service. Use the following command to get the external IP:
+   To access the Snake Game, you need to find the external IP or URL of the service. Use the following command to get the external IP:
 
 	kubectl get svc snake-game-service
 
-Look for the "EXTERNAL-IP" column to find the IP address or URL. You can access the Snake Game in your web browser at that IP or URL.
+   Look for the "EXTERNAL-IP" column to find the IP address or URL. You can access the Snake Game in your web browser at that IP or URL.
 
-Clean Up:
+3. Clean Up:
 
-To remove the Snake Game deployment and service from your Kubernetes cluster when you're done, you can use:
+   To remove the Snake Game deployment and service from your Kubernetes cluster when you're done, you can use:
 
 	kubectl delete -f deployment.yml
 	kubectl delete -f service.yml
 
-That's it! You can now deploy and run the Snake Game on your Kubernetes cluster using the provided deployment and service configuration files.
+   That's it! You can now deploy and run the Snake Game on your Kubernetes cluster using the provided deployment and service configuration files.
 
 ## Output
 ![snake-game](https://github.com/ashubambal/snake-game/assets/92073828/eba2af95-6e0d-4969-bd90-e5110b270627)
