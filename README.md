@@ -1,4 +1,4 @@
-# Snake Game
+# Snake-Game
 
 Welcome to the Snake Game, a simple web-based Snake game implemented in Python using Flask and Docker.
 
