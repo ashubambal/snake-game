@@ -82,6 +82,27 @@ This project includes a Jenkinsfile that allows you to set up Continuous Integra
 
 That's it! You've successfully set up CI for your Snake Game project using Jenkins and a Jenkinsfile.
 
+## Docker and Docker Compose Setup
+
+This project uses Docker and Docker Compose for containerization and easy deployment. Follow these steps to set up Docker and Docker Compose for running the Snake Game in a containerized environment:
+
+1. **Install Docker:**
+
+   If you haven't already, install Docker on your system by following the instructions for your specific platform: [Docker Installation Guide](https://docs.docker.com/get-docker/)
+
+2. **Install Docker Compose:**
+
+   Install Docker Compose, which is used to define and manage multi-container Docker applications. Follow the installation instructions here: [Docker Compose Installation Guide](https://docs.docker.com/compose/install/)
+
+3. **Clone the Repository:**
+
+   Clone the Snake Game repository to your local machine if you haven't already:
+
+   ```bash
+   git clone https://github.com/your-username/snake-game.git
+   cd snake-game
+
+
 
 ## Output
 ![snake-game](https://github.com/ashubambal/snake-game/assets/92073828/a93f0b10-280e-4733-a3dd-97128b843445)
