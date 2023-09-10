@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: snake-deployment
+  namespace: snake
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+        app: snake
+  template:
+    metadata:
+      name: snake
+      labels:
+        app: snake
+      namespace: snake   
+    spec:
+      containers:
+      - name: snake-game
+        image: softconsist/snake-game:latest
+        ports:
+        - containerPort: 5000 
+
