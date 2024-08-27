@@ -1,0 +1,33 @@
+name: Manual Dispatch Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: 'Start Date (YYYY-MM-DD)'
+        required: true
+        default: ''
+      end_date:
+        description: 'End Date (YYYY-MM-DD)'
+        required: true
+        default: ''
+      confluence_page_id:
+        description: 'Confluence Page ID'
+        required: true
+        default: ''
+
+jobs:
+  run-with-inputs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Display Inputs
+        run: |
+          echo "Start Date: ${{ github.event.inputs.start_date }}"
+          echo "End Date: ${{ github.event.inputs.end_date }}"
+          echo "Confluence Page ID: ${{ github.event.inputs.confluence_page_id }}"
+
+      # Add additional steps here that use the input variables
